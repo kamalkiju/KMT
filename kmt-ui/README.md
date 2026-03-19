@@ -73,3 +73,19 @@ Use that path for `config add-authtoken` if needed: `./.ngrok-native/ngrok confi
 ```bash
 npm run build
 ```
+
+## Deploy (Vercel)
+
+This app lives in the **`kmt-ui`** folder at the repo root. Vercel must use that as the project root.
+
+1. Open [vercel.com](https://vercel.com) → **Add New…** → **Project** → import **`kamalkiju/KMT`** (or your fork).
+2. Under **Configure Project**:
+   - **Root Directory**: `kmt-ui` (click Edit → set to `kmt-ui`).
+   - **Framework Preset**: Vite (auto-detected).
+   - **Build Command**: `npm run build` (default).
+   - **Output Directory**: `dist` (default for Vite).
+3. **Deploy**. Every push to the connected branch redeploys.
+
+`vercel.json` in `kmt-ui` adds SPA rewrites so deep links (e.g. `/kmt/dashboard`) load `index.html` and React Router works.
+
+**Note:** Demo data uses **browser `localStorage`** — it is per-device, not shared across users. Ngrok is only for local sharing; production uses your Vercel URL.
