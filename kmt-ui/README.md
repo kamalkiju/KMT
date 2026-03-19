@@ -76,16 +76,19 @@ npm run build
 
 ## Deploy (Vercel)
 
-This app lives in the **`kmt-ui`** folder at the repo root. Vercel must use that as the project root.
+The app source is in **`kmt-ui`**. Use **one** of these setups (mixing them is OK; pick what matches your Vercel **Root Directory**):
 
-1. Open [vercel.com](https://vercel.com) → **Add New…** → **Project** → import **`kamalkiju/KMT`** (or your fork).
-2. Under **Configure Project**:
-   - **Root Directory**: `kmt-ui` (click Edit → set to `kmt-ui`).
-   - **Framework Preset**: Vite (auto-detected).
-   - **Build Command**: `npm run build` (default).
-   - **Output Directory**: `dist` (default for Vite).
-3. **Deploy**. Every push to the connected branch redeploys.
+### Option A — Root Directory `kmt-ui` (recommended)
 
-`vercel.json` in `kmt-ui` adds SPA rewrites so deep links (e.g. `/kmt/dashboard`) load `index.html` and React Router works.
+1. [vercel.com](https://vercel.com) → **Add New…** → **Project** → import the repo.
+2. **Root Directory**: `kmt-ui` (Edit → set to `kmt-ui`).
+3. Framework **Vite**, build `npm run build`, output **`dist`**.
+4. `kmt-ui/vercel.json` provides SPA rewrites for client routes.
+
+### Option B — Root Directory `.` (repo root)
+
+If you leave **Root Directory** empty / `.`, Vercel only reads **`vercel.json` at the repo root** — not the one inside `kmt-ui`. The root **`vercel.json`** installs/builds from `kmt-ui` and sets **`outputDirectory`** to `kmt-ui/dist` plus the same SPA rewrite. No extra dashboard overrides needed.
+
+**If you see `404: NOT_FOUND` on refresh or deep links:** the SPA rewrite was not applied — usually Option B was used without the root `vercel.json`, or Option A was used but Root Directory was not actually `kmt-ui`. Fix Root Directory or pull the latest repo (with root `vercel.json`) and **Redeploy**.
 
 **Note:** Demo data uses **browser `localStorage`** — it is per-device, not shared across users. Ngrok is only for local sharing; production uses your Vercel URL.

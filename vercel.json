@@ -1,0 +1,6 @@
+{
+  "installCommand": "cd kmt-ui && npm install",
+  "buildCommand": "cd kmt-ui && npm run build",
+  "outputDirectory": "kmt-ui/dist",
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}
