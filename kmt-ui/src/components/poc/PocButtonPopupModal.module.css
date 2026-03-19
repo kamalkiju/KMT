@@ -1,0 +1,166 @@
+.intro {
+  margin: 0 0 18px;
+  font-size: 14px;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+.fieldset {
+  margin: 0 0 20px;
+  padding: 14px 16px;
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-card);
+  background: rgb(248 250 252);
+}
+
+.legend {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-sidebar);
+  padding: 0 6px;
+}
+
+.radioLine {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.newTabRow {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--color-card-border);
+}
+
+.lbl {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  margin-bottom: 6px;
+}
+
+.input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-input);
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.groupsHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.groupsTitle {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-sidebar);
+}
+
+.groupList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-height: min(420px, 55vh);
+  overflow: auto;
+}
+
+.groupCard {
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-card);
+  padding: 14px;
+  background: #fff;
+}
+
+.groupCardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.groupIdx {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.groupCardActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dupeGroup {
+  border: none;
+  background: none;
+  color: var(--color-primary);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.removeGroup {
+  border: none;
+  background: none;
+  color: #dc2626;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.row2 {
+  display: grid;
+  grid-template-columns: 1fr 140px;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+@media (max-width: 600px) {
+  .row2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.kindsBlock {
+  border-top: 1px solid var(--color-card-border);
+  padding-top: 12px;
+}
+
+.kindGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.kindChip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-input);
+  font-size: 12px;
+  cursor: pointer;
+  background: var(--color-bg);
+}
+
+.kindChip:hover {
+  border-color: rgb(59 130 246 / 0.45);
+}

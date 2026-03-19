@@ -1,0 +1,235 @@
+.headRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.verBadge {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: var(--radius-input);
+  background: rgb(59 130 246 / 0.12);
+  color: var(--color-sidebar);
+  border: 1px solid rgb(59 130 246 / 0.3);
+}
+
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 24px;
+  align-items: start;
+}
+
+@media (max-width: 1000px) {
+  .split {
+    grid-template-columns: 1fr;
+  }
+}
+
+.reviewSplit {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) min(340px, 34vw);
+  gap: 28px;
+  align-items: start;
+}
+
+@media (max-width: 1100px) {
+  .reviewSplit {
+    grid-template-columns: 1fr;
+  }
+}
+
+.statusStrip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  border-radius: var(--radius-input);
+  border: 1px solid var(--color-card-border);
+  background: linear-gradient(180deg, rgb(248 250 252) 0%, #fff 100%);
+}
+
+.expiryPill {
+  font-size: 12px;
+  color: var(--color-meta);
+}
+
+.negPanel {
+  margin-bottom: 16px;
+  padding: 12px 14px;
+  border-radius: var(--radius-input);
+  border: 1px dashed rgb(148 163 184 / 0.7);
+  background: rgb(254 252 232 / 0.5);
+}
+
+.negTitle {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-meta);
+}
+
+.negGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.negChip {
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid var(--color-card-border);
+  background: #fff;
+  cursor: pointer;
+}
+
+.negChipOn {
+  border-color: rgb(220 38 38 / 0.5);
+  background: rgb(254 226 226 / 0.5);
+  color: #991b1b;
+}
+
+.negHint {
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: var(--color-meta);
+  line-height: 1.45;
+}
+
+.warnBanner {
+  margin-bottom: 16px;
+  padding: 12px 14px;
+  border-radius: var(--radius-input);
+  border: 1px solid rgb(220 38 38 / 0.35);
+  background: rgb(254 242 242);
+  font-size: 13px;
+  line-height: 1.5;
+  color: #991b1b;
+}
+
+.warnBanner p {
+  margin: 0 0 6px;
+}
+
+.warnBanner p:last-child {
+  margin-bottom: 0;
+}
+
+.mainFlow {
+  min-width: 0;
+}
+
+.intro {
+  margin: 0 0 20px;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+}
+
+.sideMuted {
+  margin: 0 0 14px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--color-meta);
+}
+
+.main {
+  min-width: 0;
+}
+
+.pulseBelow {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-accent, rgb(44 90 133 / 0.14));
+}
+
+.h2 {
+  margin: 0 0 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.hint {
+  margin: 0 0 12px;
+  font-size: 12px;
+  color: var(--color-meta);
+}
+
+.preview {
+  max-height: min(560px, 72vh);
+  overflow: auto;
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-card);
+  padding: 12px;
+  background: #fff;
+}
+
+.side {
+  position: sticky;
+  top: 8px;
+  padding: 16px;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--color-card-border);
+  background: var(--color-bg);
+}
+
+.sideTitle {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-sidebar);
+}
+
+.thread {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+  max-height: 160px;
+  overflow: auto;
+}
+
+.bubble {
+  padding: 8px 10px;
+  border-radius: var(--radius-input);
+  background: #fff;
+  border: 1px solid var(--color-card-border);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.bubbleMeta {
+  font-size: 10px;
+  color: var(--color-meta);
+  margin-bottom: 4px;
+}
+
+.muted {
+  font-size: 13px;
+  color: var(--color-meta);
+  margin: 0;
+}
+
+.err {
+  color: #b91c1c;
+  font-size: 13px;
+  margin: 0 0 8px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}

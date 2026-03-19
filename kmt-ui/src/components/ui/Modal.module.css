@@ -1,0 +1,107 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgb(17 24 39 / 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  padding: 24px;
+  animation: modalBackdropIn 0.22s ease-out;
+}
+
+@keyframes modalBackdropIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.panel {
+  background: var(--color-card);
+  border-radius: calc(var(--radius-card) + 4px);
+  border: 1px solid var(--border-accent);
+  box-shadow: var(--shadow-modal);
+  max-width: 920px;
+  width: 100%;
+  max-height: 90vh;
+  overflow: auto;
+  position: relative;
+  animation: modalPanelIn 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes modalPanelIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.panelWide {
+  max-width: min(1120px, 96vw);
+}
+
+.panelExtraWide {
+  max-width: min(1240px, 98vw);
+}
+
+.close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-input);
+  background: rgb(255 255 255 / 0.9);
+  color: var(--color-text-muted);
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.close:hover {
+  background: rgb(239 246 255);
+  color: var(--color-sidebar);
+  border-color: rgb(59 130 246 / 0.25);
+}
+
+.header {
+  padding: 22px 56px 16px 24px;
+  border-bottom: 1px solid var(--border-accent);
+  background: var(--surface-tint-subtle);
+}
+
+.title {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-sidebar);
+}
+
+.body {
+  padding: 22px 24px 8px;
+  background: linear-gradient(180deg, rgb(248 250 252 / 0.5) 0%, rgb(255 255 255 / 0) 120px);
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 16px 24px 22px;
+  border-top: 1px solid var(--color-card-border);
+  background: rgb(248 250 252 / 0.6);
+}

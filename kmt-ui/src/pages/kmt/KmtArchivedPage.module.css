@@ -1,0 +1,25 @@
+.tableWrap {
+  overflow-x: auto;
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-card);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--color-card-border);
+}
+
+.table th {
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--color-text-muted);
+  background: rgb(248 250 252);
+}

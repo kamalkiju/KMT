@@ -1,0 +1,53 @@
+:root {
+  /* Design system — PRD §8 */
+  --color-primary: #3b82f6;
+  --color-sidebar: #173a5c;
+  --color-bg: #f5f7fa;
+  --color-card-border: #e5e7eb;
+  --color-card: #ffffff;
+  --color-text: #111827;
+  --color-text-muted: #6b7280;
+  --color-meta: #9ca3af;
+
+  --status-draft: #facc15;
+  --status-rejected: #ef4444;
+  --status-published: #22c55e;
+  --status-archived: #9ca3af;
+  --status-awaiting: #3b82f6;
+
+  --accent-section: #c2410c;
+  --info-bg: #eff6ff;
+  --info-border: #dbeafe;
+
+  --radius-card: 12px;
+  --radius-button: 10px;
+  --radius-input: 8px;
+
+  --shadow-card: 0 1px 3px rgb(0 0 0 / 0.08), 0 4px 12px rgb(0 0 0 / 0.04);
+  --shadow-soft: 0 4px 20px rgb(44 90 133 / 0.07);
+  --shadow-modal: 0 24px 48px rgb(15 23 42 / 0.12), 0 0 0 1px rgb(44 90 133 / 0.06);
+  --shadow-inset-readonly: inset 0 1px 2px rgb(15 23 42 / 0.05);
+
+  /* Sidebar / primary tint surfaces (same hue family as --color-sidebar & --color-primary) */
+  --surface-tint-subtle: linear-gradient(
+    135deg,
+    rgb(239 246 255 / 0.95) 0%,
+    rgb(255 255 255) 55%,
+    rgb(248 250 252) 100%
+  );
+  --surface-header-bar: linear-gradient(
+    90deg,
+    rgb(44 90 133 / 0.1) 0%,
+    rgb(59 130 246 / 0.06) 50%,
+    rgb(255 255 255 / 0) 100%
+  );
+  --border-accent: rgb(44 90 133 / 0.14);
+  --border-accent-strong: rgb(59 130 246 / 0.35);
+
+  --font-sans: 'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-weight-heading: 600;
+  --font-weight-body: 400;
+
+  --sidebar-width: 260px;
+  --header-height: 56px;
+}

@@ -1,0 +1,68 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: var(--radius-button);
+  border: 1px solid transparent;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.primary {
+  background: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+}
+
+.primary:hover {
+  filter: brightness(0.95);
+}
+
+.secondary {
+  background: #fff;
+  color: var(--color-text);
+  border-color: var(--color-card-border);
+}
+
+.secondary:hover {
+  background: var(--color-bg);
+}
+
+.ghost {
+  background: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.ghost:hover {
+  background: rgb(59 130 246 / 0.08);
+}
+
+.danger {
+  background: #fff;
+  color: var(--status-rejected);
+  border-color: rgb(239 68 68 / 0.45);
+}
+
+.success {
+  background: var(--status-published);
+  color: #fff;
+  border-color: var(--status-published);
+}
+
+.success:hover {
+  filter: brightness(0.95);
+}
+
+.sm {
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+.disabled {
+  opacity: 0.55;
+  pointer-events: none;
+}

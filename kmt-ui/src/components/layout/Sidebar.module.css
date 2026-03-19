@@ -1,0 +1,143 @@
+.sidebar {
+  width: var(--sidebar-width);
+  min-height: 100vh;
+  background: var(--color-sidebar);
+  color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 20px;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid rgb(255 255 255 / 0.12);
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 12px 0;
+  flex: 1;
+}
+
+.menuBottom {
+  list-style: none;
+  margin: 0;
+  padding: 12px 0 20px;
+  border-top: 1px solid rgb(255 255 255 / 0.12);
+}
+
+.item {
+  margin: 2px 10px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: var(--radius-input);
+  color: rgb(255 255 255 / 0.88);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.link:hover {
+  background: rgb(255 255 255 / 0.08);
+  text-decoration: none;
+}
+
+.linkActive {
+  background: rgb(255 255 255 / 0.14);
+  color: #fff;
+  font-weight: 500;
+}
+
+.subList {
+  list-style: none;
+  margin: 4px 0 8px;
+  padding: 0 0 0 36px;
+}
+
+.subLink {
+  display: block;
+  padding: 6px 12px;
+  font-size: 13px;
+  color: rgb(255 255 255 / 0.75);
+  border-radius: var(--radius-input);
+  text-decoration: none;
+}
+
+.subLink:hover {
+  background: rgb(255 255 255 / 0.06);
+  text-decoration: none;
+}
+
+.subLinkActive {
+  background: rgb(255 255 255 / 0.14) !important;
+  color: #fff !important;
+  font-weight: 500;
+}
+
+.subLinkButton {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 6px 12px;
+  font-size: 13px;
+  color: rgb(255 255 255 / 0.75);
+  border-radius: var(--radius-input);
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.subLinkButton:hover {
+  background: rgb(255 255 255 / 0.06);
+}
+
+.popupText {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}
+
+.chevron {
+  margin-left: auto;
+  opacity: 0.7;
+}
+
+.icon {
+  flex-shrink: 0;
+  opacity: 0.9;
+}
+
+.linkPrimary {
+  background: rgb(255 255 255 / 0.06);
+  border: 1px solid rgb(250 204 21 / 0.35);
+}
+
+.linkPrimary.linkActive {
+  border-color: rgb(250 204 21 / 0.55);
+  background: rgb(255 255 255 / 0.12);
+}
+
+.primaryLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.primaryStar {
+  font-size: 11px;
+  color: #fbbf24;
+  line-height: 1;
+}

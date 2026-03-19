@@ -1,0 +1,30 @@
+.success {
+  margin-bottom: 20px;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.explorerBlock {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-card-border);
+}
+
+.explorerTitle {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-sidebar);
+}
+
+.explorerLead {
+  margin: 0 0 18px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}

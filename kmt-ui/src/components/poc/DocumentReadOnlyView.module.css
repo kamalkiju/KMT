@@ -1,0 +1,114 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.tabSection {
+  border: 1px solid var(--border-accent);
+  border-radius: calc(var(--radius-card) + 4px);
+  padding: 0;
+  background: var(--color-card);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+}
+
+.tabTitle {
+  margin: 0;
+  padding: 14px 18px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-sidebar);
+  background: var(--surface-header-bar);
+  border-bottom: 1px solid var(--border-accent);
+}
+
+.tabBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  margin: 16px 18px 16px;
+  border-radius: 12px;
+  background: linear-gradient(120deg, rgb(239 246 255 / 0.9) 0%, rgb(255 255 255) 100%);
+  border: 1px solid rgb(59 130 246 / 0.18);
+  box-shadow: 0 2px 12px rgb(59 130 246 / 0.08);
+}
+
+.tabBarLeft,
+.tabBarRight {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.tabSectionCompact {
+  padding-top: 4px;
+}
+
+.group {
+  margin: 0 18px 16px;
+  border-radius: 14px;
+  border: 1px solid var(--border-accent);
+  background: rgb(255 255 255);
+  box-shadow: 0 4px 20px rgb(44 90 133 / 0.06);
+  overflow: hidden;
+}
+
+.group:last-child {
+  margin-bottom: 18px;
+}
+
+.groupTitle {
+  margin: 0;
+  padding: 12px 16px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-sidebar);
+  background: linear-gradient(90deg, rgb(239 246 255 / 0.95) 0%, rgb(255 255 255) 70%);
+  border-bottom: 1px solid rgb(44 90 133 / 0.1);
+}
+
+.grid {
+  display: grid;
+  gap: 14px;
+  padding: 16px;
+}
+
+.grid2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 700px) {
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cell {
+  min-width: 0;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: rgb(248 250 252 / 0.85);
+  border: 1px solid rgb(44 90 133 / 0.08);
+  transition: border-color 0.15s ease;
+}
+
+.cell:hover {
+  border-color: rgb(59 130 246 / 0.15);
+}
+
+.full {
+  grid-column: 1 / -1;
+  min-width: 0;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgb(248 250 252 / 0.5);
+  border: 1px solid rgb(44 90 133 / 0.1);
+}

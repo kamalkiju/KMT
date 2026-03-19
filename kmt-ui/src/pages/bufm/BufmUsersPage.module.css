@@ -1,0 +1,127 @@
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 380px);
+  gap: 24px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.roster {
+  min-width: 0;
+}
+
+.rowSelected {
+  background: rgb(59 130 246 / 0.08);
+  outline: none;
+}
+
+.nameCell {
+  display: block;
+  font-weight: 600;
+  color: var(--color-sidebar);
+}
+
+.subMuted {
+  display: block;
+  font-size: 12px;
+  color: var(--color-meta);
+  margin-top: 2px;
+}
+
+.detail {
+  min-width: 0;
+}
+
+.profileCard {
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-card);
+  padding: 14px;
+  background: var(--color-bg);
+  margin-bottom: 8px;
+}
+
+.profileHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.profileName {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--color-sidebar);
+}
+
+.dl {
+  margin: 0;
+  display: grid;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.dl dt {
+  margin: 0;
+  font-weight: 600;
+  color: var(--color-meta);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.dl dd {
+  margin: 2px 0 0;
+  color: var(--color-text-muted);
+}
+
+.docsHeading {
+  margin-top: 20px;
+}
+
+.docList {
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.docCard {
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-input);
+  padding: 12px;
+  background: #fff;
+}
+
+.docCardTop {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.docTitle {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-sidebar);
+}
+
+.docMeta {
+  font-size: 12px;
+  color: var(--color-meta);
+  margin: 6px 0 10px;
+}
+
+.docActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}

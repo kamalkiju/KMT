@@ -1,0 +1,17 @@
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.preview {
+  margin-top: 16px;
+  max-height: min(560px, 70vh);
+  overflow: auto;
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-card);
+  padding: 12px;
+  background: #fff;
+}

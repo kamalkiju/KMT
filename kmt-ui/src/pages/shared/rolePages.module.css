@@ -1,0 +1,143 @@
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: var(--font-weight-heading);
+  color: var(--color-sidebar);
+}
+
+.lead {
+  margin: 0 0 16px;
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+
+.h2 {
+  margin: 0 0 8px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.list {
+  margin: 0 0 16px;
+  padding-left: 18px;
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: 20px;
+  align-items: start;
+}
+
+@media (max-width: 800px) {
+  .split {
+    grid-template-columns: 1fr;
+  }
+}
+
+.panel {
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-input);
+  padding: 14px;
+  background: var(--color-bg);
+}
+
+.meta {
+  font-size: 13px;
+  color: var(--color-meta);
+  margin: 0 0 6px;
+}
+
+.metaCount {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-sidebar);
+  margin: 0 0 8px;
+  line-height: 1.1;
+}
+
+.miniList {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.emptyLead {
+  margin: 0;
+  padding: 24px 16px;
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 14px;
+  border: 1px dashed var(--color-card-border);
+  border-radius: var(--radius-card);
+  background: var(--color-bg);
+}
+
+.timeline {
+  border-left: 2px solid var(--color-card-border);
+  padding-left: 14px;
+  margin: 12px 0;
+}
+
+.timelineItem {
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+
+.badgeRow {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.th {
+  text-align: left;
+  padding: 10px;
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-card-border);
+  color: var(--color-text-muted);
+}
+
+.td {
+  padding: 10px;
+  border-bottom: 1px solid var(--color-card-border);
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.gapBefore {
+  margin-top: 16px;
+}
+
+.triGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+@media (max-width: 1000px) {
+  .triGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,281 @@
+.card {
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-card);
+  background: var(--color-card);
+  margin-bottom: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.cardCompact {
+  margin-bottom: 0;
+  box-shadow: none;
+}
+
+.headCompact {
+  padding: 10px 12px 8px;
+}
+
+.subCompact {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: var(--color-meta);
+}
+
+.feedCompact {
+  max-height: 200px;
+}
+
+.feedCompact .feedItem {
+  padding: 10px 12px;
+}
+
+.moreHint {
+  margin: 0;
+  padding: 8px 12px;
+  font-size: 12px;
+  color: var(--color-meta);
+  border-top: 1px solid rgb(238 238 238);
+  background: rgb(248 250 252);
+}
+
+.head {
+  padding: 16px 18px 12px;
+  border-bottom: 1px solid var(--color-card-border);
+  background: linear-gradient(180deg, rgb(248 250 252) 0%, #fff 100%);
+}
+
+.headTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bubbleIcon {
+  font-size: 20px;
+}
+
+.title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e3a5f;
+}
+
+.cardCompact .title {
+  font-size: 14px;
+}
+
+.count {
+  font-weight: 600;
+  color: var(--color-meta);
+}
+
+.sub {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--color-meta);
+}
+
+.feed {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 320px;
+  overflow: auto;
+}
+
+.feedItem {
+  border-bottom: 1px solid rgb(238 238 238);
+  padding: 14px 18px;
+}
+
+.feedItem:last-child {
+  border-bottom: none;
+}
+
+.sysRow {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.sysAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgb(241 245 249);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.userAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sysBody {
+  flex: 1;
+  min-width: 0;
+}
+
+.metaRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  font-size: 13px;
+  width: 100%;
+}
+
+.time {
+  font-size: 12px;
+  color: var(--color-meta);
+}
+
+.pill {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgb(241 245 249);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.text {
+  margin: 0;
+  font-size: 14px;
+  color: var(--color-text);
+  line-height: 1.45;
+}
+
+.italic {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.45;
+  font-style: italic;
+  color: var(--color-text-muted);
+}
+
+.composer {
+  display: flex;
+  gap: 12px;
+  padding: 14px 18px;
+  border-top: 1px solid var(--color-card-border);
+  background: rgb(248 250 252);
+}
+
+.composerInner {
+  flex: 1;
+  min-width: 0;
+}
+
+.composerInput {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-input);
+  font-family: inherit;
+  font-size: 14px;
+  resize: vertical;
+  min-height: 52px;
+  background: #fff;
+}
+
+.composerFoot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.composerHint {
+  font-size: 12px;
+  color: var(--color-meta);
+  max-width: 420px;
+}
+
+.postBtn {
+  padding: 8px 16px;
+  border-radius: var(--radius-button);
+  border: 1px solid var(--color-card-border);
+  background: rgb(241 245 249);
+  color: var(--color-meta);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: not-allowed;
+}
+
+.editedPill {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgb(254 243 199);
+  color: rgb(146 64 14);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.editLink {
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-sidebar);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.editLink:hover {
+  color: var(--color-primary);
+}
+
+.editBox {
+  margin-top: 8px;
+}
+
+.editTextarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-input);
+  font-family: inherit;
+  font-size: 14px;
+  resize: vertical;
+  min-height: 88px;
+  background: #fff;
+}
+
+.editActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.editHint {
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: var(--color-meta);
+}
